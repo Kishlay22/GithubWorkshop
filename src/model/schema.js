@@ -1,11 +1,7 @@
 const mongoose=require("mongoose");
 
 const schemaregs=new mongoose.Schema({
-    First_Name:{
-        type:String,
-        required:true
-    },
-    Last_Name:{
+    Name:{
         type:String,
         required:true
     },
@@ -33,7 +29,11 @@ const schemaregs=new mongoose.Schema({
     Locallite:{
         type:String,
         required:true
-    }
+    },
+        BusStand:{
+        type:String,
+        required:true
+    },
 })
 
 const Register= new mongoose.model("registration",schemaregs);
