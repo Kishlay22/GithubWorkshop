@@ -12,7 +12,7 @@ const hbs=require("hbs");
 app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 //const staticpath=path.join(__dirname,"../public");
-const publicDirectoryPath = path.join(__dirname,'../templatess/views')
+const publicDirectoryPath = path.join(__dirname,'../templatess/partials')
 app.use(express.static(publicDirectoryPath));
 const partialpath=path.join(__dirname,"../templatess/partials");
 hbs.registerPartials(partialpath);
