@@ -33,8 +33,7 @@ app.get("/",(req,res)=>{
 app.post("/register",(req,res)=>{
 try{
    const studentdata=new Registerstu({
-    Name:req.body.First_Name,
-    Last_Name:req.body. Last_Name,
+    Name:req.body.Name,
     Email_Id :req.body.Email_Id,
     Mobile_Number  :req.body.Mobile_Number,
     Gender :req.body.Gender,
