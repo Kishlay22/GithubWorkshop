@@ -25,8 +25,9 @@ table{
   font-weight: bold;
   text-align:; 
   background-color: SlateBlue; 
-  border-collapse: collapse; 
-  border: 2px solid navy
+  border-collapse: collapse;   
+  width:50%;
+  border-radius: 3em;
 }
 table.inner{
   border: 0px
@@ -60,19 +61,12 @@ table.inner{
  
 <!----- First Name ---------------------------------------------------------->
 <tr>
-<td>FIRST NAME</td>
-<td><input type="text" name="First_Name" maxlength="30" required/>
+<td> NAME</td>
+<td><input type="text" name="Name" maxlength="30" required/>
 
 </td>
 </tr>
  
-<!----- Last Name ---------------------------------------------------------->
-<tr>
-<td>LAST NAME</td>
-<td><input type="text" name="Last_Name" maxlength="30" required/>
-
-</td>
-</tr>
 
 
 <!----- Email Id ---------------------------------------------------------->
@@ -128,13 +122,19 @@ OTHERS<input type="radio" name="Branch" value="OTHERS" required /><br/>
 
 
 <tr>
-<td>Locallite</td>
+<td>LOCALLITE</td>
 <td>
 YES<input type="radio" name="Locallite" value="yes" required />
 NO <input type="radio" name="Locallite" value="no" required/>
 </td>
 </tr>
 
+    <tr>
+<td>BUS STAND</td>
+<td><input type="text" name="BusStand" maxlength="30" required/>
+
+</td>
+</tr>
  
 <!----- Submit and Reset ------------------------------------------------->
 <tr>
