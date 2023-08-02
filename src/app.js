@@ -22,6 +22,7 @@ const templatepath=path.join(__dirname,"../templatess/views")
 //app.use(express.static(staticpath));
 app.set("view engine","hbs");
 app.set("views",templatepath);
+require('dotenv').config();
 
 
 app.get("/",(req,res)=>{

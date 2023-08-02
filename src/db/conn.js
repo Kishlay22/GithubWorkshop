@@ -1,7 +1,8 @@
 const mongoose=require("mongoose");
 mongoose.set("strictQuery",false);
+require('dotenv').config();
 
-mongoose.connect("mongodb+srv://kishlay455:04bM2593sqylHvgb@cluster0.0xuewuc.mongodb.net/?retryWrites=true&w=majority",{
+mongoose.connect(process.env.URL,{
     useNewUrlParser:true,
     useUnifiedTopology:true
 }).then(()=>{
